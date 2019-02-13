@@ -1,0 +1,14 @@
+body
+{
+display: flex;
+justify-content: center;
+align-items: center;
+height: 100vh;
+overflow: hidden;
+}
+
+p
+{
+    font-size: 20px;
+    font-weight: bold;
+}
