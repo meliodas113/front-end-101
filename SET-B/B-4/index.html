@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>
+            Sequence Detector
+        </title>
+        <link href="style.css" rel="stylesheet">
+    </head>
+    <body>
+    <p id="para"></p>
+    </body>
+    <script>
+
+        const pressed = [];
+        const code = 'DVM';
+      window.addEventListener('keypress' , (e) => {
+        pressed.push(e.key);
+
+        if (pressed.join('').includes(code))
+        {
+            para.innerHTML = "Front-end is Fun!";
+        }
+
+      })
+
+
+    </script>
+</html>
