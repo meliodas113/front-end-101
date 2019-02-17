@@ -1,4 +1,4 @@
-# DVM BIT-Pilani
+# DVM BITS-Pilani
 ## Frontend 101
 ## SET-A
 - [A-2](https://meliodas113.github.io/front-end-101/SET-A/A2) - Created a Responsive grid with gaps.
