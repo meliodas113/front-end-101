@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Map</title>
+        <link rel="stylesheet" href="style.css">
+    </head>
+    <body>
+        <img src="world-map.jpg"  id = "wordmap" class="maps" style="height:100vh;width:100vw;">
+    </body>
+    <script>
+        var map = document.getElementById('worldmap');
+
+        document.addEventListener('touchmove' ,function(e){
+
+            if(e.touches.length == 2)
+            {
+                var dist = Math.hypot(
+                  e.touches[0].pageX - e.touches[1].pageX,
+                  e.touches[0].pageY - e.touches[1].pageY);
+
+                  map.style.transform = "scale("+ dist +")"
+            }
+        })
+
+    </script>
+</html>
