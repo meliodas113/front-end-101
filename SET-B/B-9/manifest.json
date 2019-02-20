@@ -1,0 +1,20 @@
+{
+    "name" : "DVM" ,
+    "version" : "1.0",
+    "manifest_version" : 2,
+    "description": "DVM Frontend winter Assignment",
+    
+    "content_scripts" : [
+        {
+            "matches" : ["https://www.bits-bosm.org/" ,"https://bits-apogee.org/" ,"https://bits-oasis.org/2018main/"],
+            "js" :["content.js"]
+        }
+    ],
+
+    "browser_action":{
+        "default_popup": "popup.html"
+        
+    }
+
+    
+}
