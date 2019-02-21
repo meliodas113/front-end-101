@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Hold Shift to Check Multiple Checkboxes</title>
+  <link href="style.css" rel="stylesheet">
+</head>
+<body>
+  
+  <div class="container">
+    <div class="item">
+      <input type="checkbox">
+      <p>This is an inbox layout.</p>
+    </div>
+    <div class="item">
+      <input type="checkbox">
+      <p>Check one item</p>
+    </div>
+    <div class="item">
+      <input type="checkbox">
+      <p>Hold down your Shift key</p>
+    </div>
+    <div class="item">
+      <input type="checkbox">
+      <p>Check a lower item</p>
+    </div>
+    <div class="item">
+      <input type="checkbox">
+      <p>Everything in between should also be set to checked</p>
+    </div>
+    <div class="item">
+      <input type="checkbox">
+      <p>Try do it without any libraries</p>
+    </div>
+    <div class="item">
+      <input type="checkbox">
+      <p>Just regular JavaScript</p>
+    </div>
+    
+  </div>
+
+<script>
+const checkboxes = document.querySelectorAll('.container input[type="checkbox"]');
+let a;
+function Check(e) {
+  
+  let b = false;
+  if (e.shiftKey && this.checked) {
+   checkboxes.forEach(checkbox => {
+      if (checkbox === this || checkbox === a) 
+      {
+        b = !b;
+      }
+      if (b) {
+        checkbox.checked = true;
+      }
+    });
+  }
+  a = this;
+}
+checkboxes.forEach(checkbox => checkbox.addEventListener('click', Check));
+</script>
+</body>
+</html>
