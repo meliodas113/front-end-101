@@ -1,0 +1,49 @@
+body
+{
+background: #d64161;
+display: flex;
+justify-content: space-around;
+align-content: space-around;
+flex-wrap: wrap;
+height: 100%;
+}
+
+.item
+{
+    height: 265px;
+    margin: 30px;
+    flex-basis: 28%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: white;
+
+
+}
+
+@media (max-width: 1200px)
+{
+    .item
+    {
+    flex-basis: 43%;
+    }
+    
+}
+
+@media (max-width: 900px)
+{
+    .item
+    {
+    flex-basis: 50%;
+    }
+    
+}
+
+@media (max-width: 550px)
+{
+    .item
+    {
+    flex-basis: 100%;
+    }
+    
+}
