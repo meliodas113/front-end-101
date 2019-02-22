@@ -3,7 +3,7 @@
 ## SET-A
 - **[A-1](https://meliodas113.github.io/front-end-101/SET-A/A-1)** - Created a Responsive grid.
 - **[A-2](https://meliodas113.github.io/front-end-101/SET-A/A2)** - Created a Responsive grid with gaps.
-- **[A-3](https://meliodas113.github.io/front-end-101/SET-A/A-3)** - Created a Responsive Navbar.
+- **[A-4](https://meliodas113.github.io/front-end-101/SET-A/A-4)** - Created a Responsive Navbar.
 - **[A-7](https://meliodas113.github.io/front-end-101/SET-A/A-7)** - Created a Replica of Iphone-X.
 ## SET-B
 - **[B-1](https://meliodas113.github.io/front-end-101/SET-B/B-1)** - Making Sound effects when key is pressed.
