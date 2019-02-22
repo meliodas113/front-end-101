@@ -1,7 +1,7 @@
 # DVM BITS-Pilani
 ## Frontend 101
 ## SET-A
-- [A-2](https://meliodas113.github.io/front-end-101/SET-A/A2) - **Created a Responsive grid with gaps.**
+- **[A-2](https://meliodas113.github.io/front-end-101/SET-A/A2)** - **Created a Responsive grid with gaps.**
 - [A-7](https://meliodas113.github.io/front-end-101/SET-A/A-7) - Created a Replica of Iphone-X.
 ## SET-B
 - [B-1](https://meliodas113.github.io/front-end-101/SET-B/B-1) - Making Sound effects when key is pressed.
