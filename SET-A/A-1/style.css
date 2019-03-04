@@ -30,16 +30,34 @@ height: 100%;
     
 }
 
-@media (max-width: 900px)
+@media (max-width: 870px)
 {
     .item
     {
-    flex-basis: 50%;
+    flex-basis: 42%;
     }
     
 }
 
-@media (max-width: 550px)
+@media (max-width: 764px)
+{
+    .item
+    {
+    flex-basis: 41%;
+    }
+    
+}
+
+@media (max-width: 682px)
+{
+    .item
+    {
+    flex-basis: 40%;
+    }
+    
+}
+
+@media (max-width: 620px)
 {
     .item
     {
