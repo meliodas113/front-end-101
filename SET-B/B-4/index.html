@@ -7,7 +7,7 @@
         <link href="style.css" rel="stylesheet">
     </head>
     <body>
-    <p id="para"></p>
+    
     </body>
     <script>
 
@@ -17,8 +17,14 @@
         pressed.push(e.key);
 
         if (pressed.join('').includes(code))
-        {
-            para.innerHTML = "Front-end is Fun!";
+        {   
+            var para = document.createElement("p");
+            var t = document.createTextNode("Front-end is Fun!");
+            para.appendChild(t);
+            document.body.appendChild(para);
+            
+            pressed.length = 0;
+            
         }
 
       })
