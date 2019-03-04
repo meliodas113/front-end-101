@@ -68,7 +68,8 @@ body
     border-radius: 50%;
     background-color: white;
     position: absolute;
-    top: 46vh;
+    top: 50%;
+    transform: translateY(-50%);
     z-index: 5;
 }
 

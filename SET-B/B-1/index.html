@@ -5,14 +5,14 @@
         <link href="style.css" rel="stylesheet">
     </head>
     <body>
-        <a href="#" onclick="sound1.play()">A</a>
-        <a href="#" onclick="sound2.play()">S</a>
-        <a href="#" onclick="sound3.play()">D</a>
-        <a href="#" onclick="sound4.play()">F</a>
-        <a href="#" onclick="sound5.play()">G</a>
-        <a href="#" onclick="sound6.play()">H</a>
-        <a href="#" onclick="sound7.play()">J</a>
-        <a href="#" onclick="sound8.play()">K</a>
+        <a href="#" onclick="sound1.play()" id="a">A</a>
+        <a href="#" onclick="sound2.play()" id="s">S</a>
+        <a href="#" onclick="sound3.play()" id="d">D</a>
+        <a href="#" onclick="sound4.play()" id="f">F</a>
+        <a href="#" onclick="sound5.play()" id="g">G</a>
+        <a href="#" onclick="sound6.play()" id="h">H</a>
+        <a href="#" onclick="sound7.play()" id="j">J</a>
+        <a href="#" onclick="sound8.play()" id="k">K</a>
         
         <audio id="audio" controls style="display:none;"><source src="button-1.mp3" type="audio/mpeg"></audio>
         <audio id="audio1" controls style="display:none;"><source src="button-2.mp3" type="audio/mpeg"></audio>
@@ -40,31 +40,73 @@
             sound7.src = "button-7.mp3";
             var sound8 = new Audio();
             sound8.src = "button-8.mp3";
-            
-           document.addEventListener('keydown', function(e) {
+            var a = document.getElementById("a");
+            var s = document.getElementById("s");
+            var d = document.getElementById("d");
+            var f = document.getElementById("f");
+            var g = document.getElementById("g");
+            var h = document.getElementById("h");
+            var j = document.getElementById("j");
+            var k = document.getElementById("k");
+
+            document.addEventListener('keydown', function(e) {
             if (e.keyCode == 65) {
             document.getElementById('audio').play();
-                                 }
+            a.style.border = "3px solid black";
+            }
             else if (e.keyCode == 83) {
             document.getElementById('audio1').play();
+            s.style.border = "3px solid black";
                                  } 
             else if (e.keyCode == 68) {
             document.getElementById('audio2').play();
+            d.style.border = "3px solid black";
                                  }
             else if (e.keyCode == 70) {
             document.getElementById('audio3').play();
+            f.style.border = "3px solid black";
                                  }
             else if (e.keyCode == 71) {
             document.getElementById('audio4').play();
+            g.style.border = "3px solid black";
                                  } 
             else if (e.keyCode == 72) {
             document.getElementById('audio5').play();
+            h.style.border = "3px solid black";
                                  }
             else if (e.keyCode == 74) {
             document.getElementById('audio6').play();
+            j.style.border = "3px solid black";
                                  }
             else if (e.keyCode == 75) {
             document.getElementById('audio7').play();
+            k.style.border = "3px solid black";
+                                 }                                         
+                     });
+            document.addEventListener('keyup', function(e) {
+            if (e.keyCode == 65) {
+            a.style.border = "1px solid black";
+                                }
+            else if (e.keyCode == 83) {
+            s.style.border = "1px solid black";
+                                 } 
+            else if (e.keyCode == 68) {
+            d.style.border = "1px solid black";
+                                 }
+            else if (e.keyCode == 70) {
+            f.style.border = "1px solid black";
+                                 }
+            else if (e.keyCode == 71) {
+            g.style.border = "1px solid black";
+                                 } 
+            else if (e.keyCode == 72) {
+            h.style.border = "1px solid black";
+                                 }
+            else if (e.keyCode == 74) {
+            j.style.border = "1px solid black";
+                                 }
+            else if (e.keyCode == 75) {
+            k.style.border = "1px solid black";
                                  }                                         
                      });
         </script>
