@@ -1,0 +1,116 @@
+body
+{
+    background-color: black;
+    display: flex;
+    justify-content: center;
+}
+
+.left-outline
+{
+    stroke-dasharray: 1152px;
+    stroke-dashoffset: -1152px;
+    animation: d-anim 1.5s forwards;
+    animation-timing-function: cubic-bezier(.63,.42,.79,.73);
+}
+
+@keyframes d-anim
+{   
+  0%
+  {
+     
+      fill: transparent;
+      stroke-dashoffset: 1152px;
+  }
+
+  70%
+  {
+      
+      fill: transparent;
+      stroke-dashoffset: 0;
+      
+  }
+
+  100%
+  {
+      
+      fill: #FFFF;
+      stroke-dashoffset: 0;
+  }
+
+
+    
+}
+
+.middle-outline
+{
+    stroke-dasharray: 735px;
+    stroke-dashoffset: 735px;
+    fill: transparent;
+    animation: v-anim 1.5s forwards 0.4s;
+    animation-timing-function: cubic-bezier(.63,.42,.79,.73);
+}
+
+@keyframes v-anim
+{   
+  0%
+  {
+     
+      fill: transparent;
+      stroke-dashoffset: 735px;
+  }
+
+  50%
+  {
+      
+      fill: transparent;
+      stroke-dashoffset: 0;
+      
+  }
+
+  100%
+  {
+      
+      fill: #ED156D;
+      stroke-dashoffset: 0;
+  }
+
+
+    
+}
+
+.right-outline
+{
+    stroke-dasharray: 765px;
+    stroke-dashoffset: 765px;
+    fill: transparent;
+    animation: m-anim 1.5s forwards 0.5s;
+    animation-timing-function: cubic-bezier(.63,.42,.79,.73);
+}
+
+@keyframes m-anim
+{   
+  0%
+  {
+     
+      fill: transparent;
+      stroke-dashoffset: -765px;
+  }
+
+  70%
+  {
+      
+      fill: transparent;
+      stroke-dashoffset: 0;
+      
+  }
+
+  100%
+  {
+      
+      fill: #FFFF;
+      stroke-dashoffset: 0;
+  }
+
+
+    
+}
