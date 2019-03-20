@@ -1,0 +1,224 @@
+body
+{  
+   
+   height: 100vh;
+   display: flex;
+   justify-content: flex-start;
+   flex-wrap: wrap;
+   background: #d64161;
+   font-family: sans-serif;
+}
+
+div
+{
+    width: 23vw;
+    height: 30vh;
+    background-color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 60px;
+    margin: 10px;
+}
+
+
+
+div:nth-child(4),div:nth-child(10)
+{
+    margin-left: 25vw;
+}
+
+
+
+@media all and  (min-width:900px)
+{
+    div
+    {
+        width: 22vw;
+    }
+
+    @keyframes left-right
+{
+    0%{transform:translateX(0);}
+    50%{transform:translateX(25vw);}
+    100%{transform:translateX(0);}
+}
+
+@keyframes right-left
+{
+    0%{transform:translateX(0);}
+    50%{transform:translateX(-24vw);}
+    100%{transform:translateX(0);}
+}
+
+div:nth-child(1),div:nth-child(2),div:nth-child(3),div:nth-child(7),div:nth-child(8),div:nth-child(9)
+
+{
+    animation: left-right 3s infinite ease-in;
+}
+
+div:nth-child(4),div:nth-child(5),div:nth-child(6),div:nth-child(10),div:nth-child(11),div:nth-child(12)
+
+{
+    animation: right-left 3s infinite ease-in;
+}
+}
+
+@media (max-width:900px) and (min-width:801px)
+{
+    div
+    {
+        width: 30vw;
+    }
+
+    @keyframes left-right1 
+    {
+        0%{transform:translateX(0);}
+        50%{transform:translateX(30vw);}
+        100%{transform:translateX(0);}  
+    }
+    @keyframes right-left1 
+    {
+        0%{transform:translateX(0);}
+        50%{transform:translateX(-35vw);}
+        100%{transform:translateX(0);}  
+    }
+
+    
+
+div:nth-child(1),div:nth-child(2),div:nth-child(5),div:nth-child(6),div:nth-child(9),div:nth-child(10)
+
+{
+    animation: left-right1 3s infinite ease-in;
+}
+
+div:nth-child(3),div:nth-child(4),div:nth-child(7),div:nth-child(8),div:nth-child(11),div:nth-child(12)
+
+{
+    animation: right-left1 3s infinite ease-in;
+}
+    
+div:nth-child(3),div:nth-child(7),div:nth-child(11)
+{
+
+    margin-left: 34vw;
+}
+
+div:nth-child(4),div:nth-child(10)
+
+{
+    margin-left: 10px;
+}
+
+}
+
+@media (max-width:800px) and (min-width:601px)
+{
+    div
+    {
+        width: 29vw;
+    }
+
+    div:nth-child(3),div:nth-child(7),div:nth-child(11)
+{
+
+    margin-left: 34vw;
+}
+
+div:nth-child(4),div:nth-child(10)
+
+{
+    margin-left: 10px;
+}
+
+@keyframes left-right1 
+{
+    0%{transform:translateX(0);}
+    50%{transform:translateX(30vw);}
+    100%{transform:translateX(0);}  
+}
+@keyframes right-left1 
+{
+    0%{transform:translateX(0);}
+    50%{transform:translateX(-35vw);}
+    100%{transform:translateX(0);}  
+}
+
+
+
+div:nth-child(1),div:nth-child(2),div:nth-child(5),div:nth-child(6),div:nth-child(9),div:nth-child(10)
+
+{
+animation: left-right1 3s infinite ease-in;
+}
+
+div:nth-child(3),div:nth-child(4),div:nth-child(7),div:nth-child(8),div:nth-child(11),div:nth-child(12)
+
+{
+animation: right-left1 3s infinite ease-in;
+}
+}
+
+@media (max-width:600px) and (min-width: 401px)
+{
+    div
+    {
+        width: 48vw;
+    }
+
+    div:nth-child(2),div:nth-child(4),div:nth-child(6),div:nth-child(10),div:nth-child(12),div:nth-child(8)
+{
+
+    margin-left: 48vw;
+}
+
+div:nth-child(3),div:nth-child(7),div:nth-child(11)
+
+{
+    margin-left: 10px;
+}
+
+@keyframes left-right2 
+    {
+        0%{transform:translateX(0);}
+        50%{transform:translateX(39vw);}
+        100%{transform:translateX(0);}  
+    }
+    @keyframes right-left2 
+    {
+        0%{transform:translateX(0);}
+        50%{transform:translateX(-39vw);}
+        100%{transform:translateX(0);}  
+    }
+
+    
+
+div:nth-child(1),div:nth-child(3),div:nth-child(5),div:nth-child(7),div:nth-child(9),div:nth-child(11)
+
+{
+    animation: left-right2 3s infinite ease-in;
+}
+
+div:nth-child(2),div:nth-child(4),div:nth-child(6),div:nth-child(8),div:nth-child(10),div:nth-child(12)
+
+{
+    animation: right-left2 3s infinite ease-in;
+}
+}
+
+@media (max-width:400px)
+{
+    div
+    {
+        width: 100vw;
+        animation: none;
+       
+    }
+
+    div:nth-child(n)
+    {
+    
+        margin-left: 0;
+    }
+}
+
