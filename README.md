@@ -3,6 +3,7 @@
 ## SET-A
 - **[A-1](https://meliodas113.github.io/front-end-101/SET-A/A-1)** - Created a Responsive grid.
 - **[A-2](https://meliodas113.github.io/front-end-101/SET-A/A2)** - Created a Responsive grid with gaps.
+- **[A-3](https://meliodas113.github.io/front-end-101/SET-A/A-3)** - Trippy Grid.
 - **[A-4](https://meliodas113.github.io/front-end-101/SET-A/A-4)** - Created a Responsive Navbar.
 - **[A-6](https://meliodas113.github.io/front-end-101/SET-A/A-6)** - SVG Stroke animation.
 - **[A-7](https://meliodas113.github.io/front-end-101/SET-A/A-7)** - Created a Replica of Iphone-X.
