@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Github Profile</title>
+        <link href="style.css" rel="stylesheet">
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    </head>
+    <body>
+        
+            <input type="text" id="nickname" value="Please enter your github nick">
+            <button onclick="fetchAPI()">fetchAPI()</button>
+            <button onclick="XMLRequest()">XMLHttpRequest</button>
+            <button class="JQueryAJAX">JQueryAJAX</button>
+            <div id="profilephoto" class="profilephoto"></div>
+            <div id="githubname" class="githubname"></div>
+            <div id="githubbio" class="githubbio"></div>
+            <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+            <script>
+                    var profilephoto = document.getElementById("profilephoto");
+                    var githubname = document.getElementById("githubname");
+                    var githubbio = document.getElementById("githubbio");
+                    
+                   
+            
+                    function fetchAPI()
+                    {   
+                        var userinput = document.getElementById("nickname").value;
+                        fetch(`https://api.github.com/users/${userinput}`)
+                        .then(function(resp){
+                            return resp.json();
+                        })
+                        .then(function(data){
+                            profilephoto.style.backgroundImage = `url("${data.avatar_url}")`;
+                            githubname.innerHTML = `${data.name}`;
+                            githubbio.innerHTML = `${data.bio}`;
+                        })
+                    }
+
+                    function XMLRequest()
+                    {
+                       var userinput = document.getElementById("nickname").value;
+                       var request = new XMLHttpRequest();
+                       request.open('GET', `https://api.github.com/users/${userinput}`, true);
+                       request.send();
+                       request.onload = function () {
+	                   var data = JSON.parse(this.response);
+	                   if (request.readyState == 4 && request.status == 200) 
+                       {
+                        profilephoto.style.backgroundImage = `url("${data.avatar_url}")`;
+                        githubname.innerHTML = `${data.name}`;
+                        githubbio.innerHTML = `${data.bio}`;
+                        console.log(data);
+	                   } 
+                       else 
+                       {
+		               console.log('Data Not found!!');
+	                   }
+                    }
+                         
+                    }
+
+                    $(document).ready(function(){
+                    $(".JQueryAJAX").click(function(){
+                        var userinput = document.getElementById("nickname").value;
+                    $.ajax({
+                        type:'GET',
+                        url: `https://api.github.com/users/${userinput}`,
+                        success:function(data)
+                        {
+                            $(".profilephoto").css("background",`url(${data.avatar_url})`);
+                            $(".githubname").text(data.name);
+                            $(".githubbio").text(data.bio);
+                        }
+                    })
+                    });
+                    });
+                </script>
+    </body>
+    
+</html>
