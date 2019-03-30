@@ -35,6 +35,9 @@
                             githubname.innerHTML = `${data.name}`;
                             githubbio.innerHTML = `${data.bio}`;
                         })
+                        .catch(function(error) {
+                         console.log(error);
+                        });  
                     }
 
                     function XMLRequest()
