@@ -15,3 +15,4 @@
 - **[B-5](https://meliodas113.github.io/front-end-101/SET-B/B-5)** - Making Images slide in as window is scrolled.
 - **[B-6](https://meliodas113.github.io/front-end-101/SET-B/B-6)** - List using LocalStorage.
 - **[B-9](https://meliodas113.github.io/front-end-101/SET-B/B-9)** - Created a Basic Chrome Extension.
+- **[B-10](https://meliodas113.github.io/front-end-101/SET-B/B-10)** - Javascript AJAX requests.
