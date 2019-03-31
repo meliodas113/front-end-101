@@ -72,6 +72,7 @@
                         success:function(data)
                         {
                             $(".profilephoto").css("background",`url(${data.avatar_url})`);
+                            $(".profilephoto").css("background-size","cover");
                             $(".githubname").text(data.name);
                             $(".githubbio").text(data.bio);
                         }
