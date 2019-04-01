@@ -212,8 +212,19 @@ div:nth-child(2),div:nth-child(4),div:nth-child(6),div:nth-child(8),div:nth-chil
     {
         width: 100vw;
         animation: none;
-       
     }
+
+    div:nth-child(4)
+    {
+        margin-left: 10px;
+    }
+
+    div:nth-child(10)
+    {
+        margin-left: 10px;
+    }
+
+    
 
     
 }
