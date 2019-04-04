@@ -1,0 +1,158 @@
+body
+{
+display: flex;
+justify-content: space-around;
+align-items: center;
+height: 100vh;
+overflow: hidden;
+}
+.Button1
+{
+    display:flex;
+}
+.frontface
+{
+    width: 200px;
+    height: 70px;
+    background-color: red;
+    padding: 20px 20px 20px 20px;
+    border: 2px solid black;
+    color:white;
+    font-size: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: sans-serif;
+    transform-origin: 0 0;
+    /* perspective-origin: 0 0; */
+    transform: perspective(800px) rotateY(-45deg);
+    
+}
+
+.sideface
+{
+    width: 50px;
+    height: 141px;
+    background-color: maroon;
+    border: 2px solid black;
+    transform-origin: 0 0;
+    transform: perspective(600px) rotateY(45deg);
+    margin-left: -25px;
+   
+}
+
+.frontface:hover
+{
+    transform: perspective(0px) rotateY(0);
+}
+
+.frontface:hover ~ .sideface
+{
+    transform: rotateY(90deg);
+}
+
+.frontface1
+{
+    width: 200px;
+    height: 70px;
+    background-color: red;
+    padding: 20px 20px 20px 20px;
+    border: 2px solid black;
+    color:white;
+    font-size: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: sans-serif;
+}
+
+.face1,.face4
+{
+    height: 70px;
+    width: 240px;
+    background-color :red;
+    border: 2px solid black;
+}
+
+.face4
+{
+    transform-origin: 50% 100%;
+    transition: transform 0.5s ;
+    transform:skewX(-51deg) rotateX(70deg);
+    z-index: 2;
+    position: relative;
+    top: 114px;
+    
+
+}
+
+
+
+
+.face2
+{   
+    position: relative;
+    top: -114px;
+    left: 244px;
+    transform-origin: 0% 50%;
+    transform: rotateY(67deg) skewY(-17.4deg);
+    transition: transform 0.1s ;
+    
+}
+
+.face1
+{
+    transform-origin: 50% 0%;
+    position: relative;
+    top: -114px;
+    transform: skewX(37deg) rotateX(-90deg);
+    transition: transform 0.5s ;
+}
+
+.face3
+{
+position: relative;
+top: 115px;
+left: -84px;
+transform-origin: 100% 50%;
+transform: rotateY(114deg) skewY(17.45deg);
+z-index: -1;
+transition: transform 0.5s ;
+}
+
+
+
+.face2 ,.face3
+{
+    
+    height: 110px;
+    width: 80px;
+    background-color :red;
+    border: 2px solid black;
+    transition: transform 0.5s ;
+}
+
+.Button2:hover > .face2
+{
+    transform: rotateY(0) skewY(0);
+    
+}
+
+.Button2:hover > .face3
+{
+    transform: rotateY(0) skewY(0);
+}
+
+.Button2:hover > .face1
+{
+    transform: rotateY(0) skewY(0);
+}
+
+.Button2:hover > .face4
+{
+    transform: rotateY(0) skewY(0);
+}
+
+
+
+
