@@ -4,8 +4,8 @@ body
  justify-content: center;
  align-items: center;
  height: 100vh;
- background-color: yellow;
- overflow: hidden;
+ background: #ffc600;
+  overflow: hidden;
 }
 
 #todos
